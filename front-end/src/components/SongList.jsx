@@ -24,8 +24,6 @@ const SongList = ({ songsArray }) => {
         className="song-list__see-more"
         onClick={() => {
           setItems(items + 5);
-          // items += 5;
-          // console.log(items);
         }}
       >
         Ver mais

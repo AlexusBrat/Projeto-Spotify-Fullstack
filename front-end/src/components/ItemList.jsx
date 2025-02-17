@@ -27,16 +27,7 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
       <div className="item-list__container">
         {itemsArray
           .filter((currentValue, index) => index < finalItems)
-          .map((currObj, index) => (
-            <SingleItem
-              // id={currObj.id}
-              // name={currObj.name}
-              // image={currObj.image}
-              // banner={currObj.banner}
-              {...currObj}
-              idPath={idPath}
-              key={`${title}-${index}`}
-            />
+          .map((currObj, index) => ( <SingleItem {...currObj} idPath={idPath} key={`${title}-${index}`} />
           ))}
       </div>
     </div>
